@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:imageButtonStyle">@style/PlayButton</item>
+        <item name="android:buttonStyle">@style/ButtonBar</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBar</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@xml/border</item>
+    </style>
+
+    <style name="PlayButton">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@xml/border</item>
+    </style>
+
+    <style name="SplashScreen">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@color/textWhite</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:background">@xml/border</item>
+    </style>
+
+    <style name="FilterDialog">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@color/textWhite</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+
+</resources>

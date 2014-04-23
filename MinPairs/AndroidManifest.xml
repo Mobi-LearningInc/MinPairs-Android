@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobilearning.minpairs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+ 	<uses-permission android:name="android.permission.INTERNET"/>
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mp2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mobilearning.minpairs.MinPairsActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/app_name"
+			android:uiOptions="splitActionBarWhenNarrow"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleInstance"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.SoundChartActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_sound_chart"
+            
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.MPActivity"
+            android:label="@string/title_activity_mp"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.LearnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_learn"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.PracticeActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_practice"
+            android:parentActivityName="com.mobilearning.minpairs.MPActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mobilearning.minpairs.MPActivity" />
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.StatsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_stats"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.QuizzActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_quizz"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+        </activity>
+        <activity
+            android:name="com.mobilearning.minpairs.AboutActivity"
+            android:label="@string/title_activity_about" 
+            android:uiOptions="splitActionBarWhenNarrow">
+        </activity>
+        <activity android:name="com.google.ads.AdActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+ 
+    </application>
+</manifest>

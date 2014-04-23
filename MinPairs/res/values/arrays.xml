@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="trendlineTypes">
+    	<item>All</item>
+		<item>ListenSelect</item>
+	    <item>ListenType</item>
+	    <item>ReadListenSelect</item>
+   <!-- <item>None</item>
+	    <item>LinearFit</item>
+	    <item>LogarithmicFit</item>
+	    <item>ExponentialFit</item>
+	    <item>PowerlawFit</item>
+	    <item>QuadraticFit</item>
+	    <item>CubicFit</item>
+	    <item>QuarticFit</item>
+	    <item>QuinticFit</item>
+	     -->
+	</string-array>  
+</resources>

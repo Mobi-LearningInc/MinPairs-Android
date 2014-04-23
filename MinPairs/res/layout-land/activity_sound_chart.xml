@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bckg"
+    tools:context=".SoundChartActivity" >
+	
+    <ScrollView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" 
+        android:background="@color/bckg">
+        <GridLayout
+            android:id="@+id/gridl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="horizontal"
+			android:columnCount="5"
+			android:background="@color/bckg">
+        </GridLayout>
+    </ScrollView>
+    
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/stats_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/graph" />
+    </LinearLayout>
+-->
+</FrameLayout>

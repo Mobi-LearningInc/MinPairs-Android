@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/timeLimit"
+        android:entryValues="@array/timeLimitVals"
+        android:key="mp_general_timelimits_ListenSelect"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/timeLimitLabelListenSelect" />
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/timeLimit"
+        android:entryValues="@array/timeLimitVals"
+        android:key="mp_general_timelimits_ListenType"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/timeLimitLabelListenType" />
+	<ListPreference
+        android:defaultValue="5"
+        android:entries="@array/timeLimit"
+        android:entryValues="@array/timeLimitVals"
+        android:key="mp_general_timelimits_ReadListenSelect"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/timeLimitLabelReadListenSelect" />
+     <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/quizSize"
+        android:entryValues="@array/quizSizeVals"
+        android:key="mp_general_qsize"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/quizSizeLabel"/>
+     
+</PreferenceScreen>

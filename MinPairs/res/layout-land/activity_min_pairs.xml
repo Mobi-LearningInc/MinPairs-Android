@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckg"
+    tools:context=".MinPairsActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text=""
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical"
+            android:background="@color/textWhite"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" 
+            >
+    
+ 			<com.google.ads.AdView
+ 			    android:id="@+id/adView"
+ 			    android:layout_width="match_parent"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_gravity="center_horizontal"
+ 			    ads.app_name="MinimalPairs"
+ 			    ads:adSize="BANNER"
+ 			    ads:adUnitId="ca-app-pub-7358405443490326/9543400892"
+ 			    ads:loadAdOnCreate="true" />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/chart_button"
+                    style="@style/ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/chart_button" />
+
+                <Button
+                    android:id="@+id/listen_button"
+                    style="@style/ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@xml/border"
+                    android:text="@string/listen_button" />
+
+
+            </LinearLayout>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+                            <Button
+                    android:id="@+id/practice_button"
+                    style="@style/ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@xml/border"
+                    android:text="@string/practice_button" />    
+            <Button
+                android:id="@+id/quiz_button"
+                style="@style/ButtonBar"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@xml/border"
+                android:text="@string/quiz_button" />
+            
+        </LinearLayout>
+        
+        </LinearLayout>
+                    <Button
+                android:id="@+id/stats_button"
+                style="@style/ButtonBar"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@xml/border"
+                android:text="@string/stats_button" />
+</LinearLayout>
+</FrameLayout>

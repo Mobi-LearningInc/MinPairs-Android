@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#ff3E454C</color>
+	<color name="bckg">#ff2185C5</color>
+	<color name="lblue">#ff7ECEFD</color>
+	<color name="textWhite">#fffff6e5</color>
+	<color name="alert">#ffff7f66</color>
+</resources>
